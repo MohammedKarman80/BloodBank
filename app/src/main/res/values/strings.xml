@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Indian Blood Donors</string>
+    <string name="hospital_name">Hospital Name ..</string>
+    <string name="city">City ..</string>
+    <string name="mobile">Mobile Number ...</string>
+    <string name="save">Save</string>
+    <string name="app_des">IBD App is a platform for all blood donors in India, this app will help to save many lives.
+    The main idea of the app is to connect blood donors, hospitals, blood banks and Patients in one app.</string>
+    <string name="features">Features of The App</string>
+    <string name="features_dec">Our App allowed users to register as donors after sign up and login to the app, users information will be displayed to others in search page where visitors can search for donors using state filter.
+    using our app users can raise request for particular blood typ and then the request will be visible in view requests page.
+    users who already sign up can edit their account information by accessing my account page, where user can edit account password or register information.</string>
+    <string name="contact">Contact Information</string>
+    <string name="emails"> Email-Id: support@ibd.com
+    </string>
+
+
+</resources>

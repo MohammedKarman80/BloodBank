@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mkarman.bloodbank.Search"
+    android:background="@color/colorPrimary">
+
+
+
+    <LinearLayout
+        android:layout_width="386dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="3dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/linearLayout">
+
+        <Spinner
+            android:id="@+id/city_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/txt_background"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+
+
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SEARCH .."
+            android:background="@drawable/butn_background"
+            android:layout_marginTop="8dp"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"/>
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/member_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        tools:layout_editor_absoluteY="202dp"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"/>
+
+</LinearLayout>
+</android.support.constraint.ConstraintLayout>

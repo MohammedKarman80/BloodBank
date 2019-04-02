@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.mkarman.bloodbank.Register">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+       >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"
+
+            >
+
+            <EditText
+                android:id="@+id/edname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Name .."
+                android:inputType="textPersonName"
+                android:layout_marginTop="20dp"
+                android:padding="20dp"
+                android:textStyle="bold"
+                android:background="@drawable/txt_background"
+                android:layout_gravity="center"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+
+                />
+            <Spinner
+                android:id="@+id/edcity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="20dp"
+                android:textStyle="bold"
+                android:background="@drawable/txt_background"
+
+                android:layout_gravity="center"
+                android:layout_below="@+id/edname"
+
+                />
+
+            <EditText
+                android:id="@+id/edzone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint=" City .."
+                android:inputType="textPersonName"
+                android:layout_marginTop="20dp"
+                android:padding="20dp"
+                android:textStyle="bold"
+                android:background="@drawable/txt_background"
+                android:layout_gravity="center"
+                android:layout_below="@+id/edcity"/>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="20dp"
+                android:textStyle="bold"
+               android:background="@drawable/txt_background"
+
+                android:layout_gravity="center"
+                android:layout_below="@+id/edzone"
+
+                />
+
+
+            <EditText
+                android:id="@+id/edage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Age .."
+                android:inputType="textPersonName"
+                android:layout_marginTop="20dp"
+                android:padding="20dp"
+                android:textStyle="bold"
+                android:background="@drawable/txt_background"
+                android:layout_gravity="center"
+                android:layout_below="@+id/spinner"
+                android:maxLength="2"
+                android:digits="0123456789"/>
+
+            <EditText
+                android:id="@+id/edphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Mobile Number .."
+                android:inputType="phone"
+                android:layout_marginTop="20dp"
+                android:padding="20dp"
+                android:textStyle="bold"
+                android:background="@drawable/txt_background"
+                android:layout_gravity="center"
+                android:layout_below="@+id/edage"
+                android:maxLength="10"
+                />
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edphone"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/butn_background"
+                android:text="REGISTER"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

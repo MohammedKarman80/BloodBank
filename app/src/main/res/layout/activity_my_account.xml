@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mkarman.bloodbank.MyAccountActivity"
+    android:background="@color/colorPrimary">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+  <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/images"
+        android:layout_margin="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/editPass"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/butn_background"
+        android:text="Edit My Password"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="40dp"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/editProfile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Edit My Registertion Infomation"
+        android:layout_below="@+id/editPass"
+        android:layout_centerHorizontal="true"
+       android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/butn_background"/>
+
+</RelativeLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

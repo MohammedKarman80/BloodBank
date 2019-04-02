@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mkarman.bloodbank.UserRegistrationInformation">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:id="@+id/txtUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Name"
+            android:layout_margin="20dp"
+            android:inputType="textPersonName"
+            android:padding="10dp" />
+
+        <Spinner
+            android:id="@+id/txtUserCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textStyle="bold"
+            android:background="@drawable/txt_background"
+            android:layout_gravity="center"
+            android:layout_below="@+id/txtUserName"
+            />
+
+
+
+        <EditText
+            android:id="@+id/txtUserZone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/txtUserCity"
+            android:layout_margin="20dp"
+            android:hint="City" />
+
+        <EditText
+            android:id="@+id/txtUserAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/txtUserBloodTYpe"
+            android:layout_margin="20dp"
+            android:hint="Age" />
+
+
+
+
+        <Spinner
+            android:id="@+id/txtUserBloodTYpe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_margin="20dp"
+            android:textStyle="bold"
+            android:background="@drawable/txt_background"
+            android:layout_gravity="center"
+            android:layout_below="@+id/txtUserZone"
+            />
+
+
+
+
+        <EditText
+            android:id="@+id/txtUserPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            android:layout_below="@+id/txtUserAge"
+            android:layout_margin="20dp"
+            android:hint="Phone"/>
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:layout_below="@+id/txtUserPhone"
+            android:layout_marginLeft="80dp"
+            android:onClick="btnUpdate"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete My Information"
+            android:layout_below="@+id/txtUserPhone"
+            android:layout_marginLeft="200dp"/>
+
+
+    </RelativeLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
